@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tomasvn/webpack-starter#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
     "webpack": "^4.27.0",
     "webpack-cli": "^3.1.2"
   }
