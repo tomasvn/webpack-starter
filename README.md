@@ -21,3 +21,4 @@ npm install
 ## Future Updates
 - [ ] Create dev and prod webpack config
 - [ ] HMR
+- [ ] Add webpack dashboard
