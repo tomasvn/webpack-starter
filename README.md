@@ -18,7 +18,11 @@ npm install
 - [x] Add webpack dev server
 - [x] Add build, dev npm script
 
+### v0.0.2
+- [x] Create dev and prod webpack config
+- [ ] Create index.html - from build script
+- [ ] Add CSS loader, HTML loader, SCSS loader
+
 ## Future Updates
-- [ ] Create dev and prod webpack config
 - [ ] HMR
 - [ ] Add webpack dashboard
