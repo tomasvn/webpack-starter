@@ -24,5 +24,6 @@ npm install
 - [ ] Add CSS loader, HTML loader, SCSS loader
 
 ## Future Updates
+- [ ] Divide webpack config to three separate files - common, dev and prod file
 - [ ] HMR
 - [ ] Add webpack dashboard
