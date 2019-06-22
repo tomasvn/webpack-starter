@@ -22,6 +22,7 @@ npm install
 - [x] Create dev and prod webpack config
 - [ ] Create index.html - from build script
 - [ ] Add CSS loader, HTML loader, SCSS loader
+- [x] Add hash to output bundle files - JS
 
 ## Future Updates
 - [ ] Divide webpack config to three separate files - common, dev and prod file
