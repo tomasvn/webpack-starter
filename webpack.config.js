@@ -4,7 +4,7 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   mode: 'developement',
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, 'src'),
   module: {
     rules: [
       {
@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'src/index.html'
+      template: './src/index.html'
     })
   ],
   output: {
