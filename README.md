@@ -14,17 +14,10 @@ npm install
 ## Changelog
 
 ### v0.0.1
-- [x] Compile ES6 to ES5
-- [x] Add webpack dev server
-- [x] Add build, dev npm script
-
-### v0.0.2
-- [x] Create dev and prod webpack config
-- [ ] Create index.html - from build script
-- [ ] Add CSS loader, HTML loader, SCSS loader
-- [x] Add hash to output bundle files - JS
-
-## Future Updates
-- [ ] Divide webpack config to three separate files - common, dev and prod file
-- [ ] HMR
-- [ ] Add webpack dashboard
+- [x] Add babel plugins
+- [x] Use `babel.config.js` file instead of `.babelrc`
+- [x] Remove older webpack config files
+- [x] Use just two configs
+  - [x] Dev - `webpack.config.js`
+  - [x] Prod - `webpackProd.config.js`
+- [] Complete rewrite
