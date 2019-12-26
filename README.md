@@ -20,4 +20,4 @@ npm install
 - [x] Use just two configs
   - [x] Dev - `webpack.config.js`
   - [x] Prod - `webpackProd.config.js`
-- [] Complete rewrite
+- [ ] Complete rewrite
