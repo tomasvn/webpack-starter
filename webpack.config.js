@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = {
   mode: 'developement',
@@ -50,13 +51,14 @@ module.exports = {
     ]
   },
   plugins: [
+    new DashboardPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       template: './src/index.html'
     })
   ],
   output: {
-    filename: '[hash].bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, './dist')
   }
 }

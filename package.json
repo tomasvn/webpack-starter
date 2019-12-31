@@ -4,7 +4,7 @@
   "description": "Webpack Starter",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
+    "dev": "webpack-dashboard -- webpack-dev-server --mode development --config webpack.config.js",
     "build": "webpack --mode production --config webpackProd.config.js",
     "commit": "git cz"
   },
@@ -43,11 +43,10 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.41.4",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dashboard": "^3.2.0",
-    "webpack-dev-server": "^3.10.1",
-    "webpack-merge": "^4.2.2"
+    "webpack-dev-server": "^3.10.1"
   },
   "config": {
     "commitizen": {
