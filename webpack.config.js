@@ -1,10 +1,10 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const autoprefixer = require('autoprefixer');
 const DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = {
   mode: 'developement',
+  devtool: 'source-map',
   entry: path.resolve(__dirname, 'src'),
   module: {
     rules: [
@@ -23,24 +23,6 @@ module.exports = {
         use: {
           loader: require.resolve('css-loader') // require.resolve() returns string which contains path to the module
         }
-      },
-      {
-        loader: require.resolve('postcss-loader'),
-        options: {
-          ident: 'postcss',
-          plugins: () => [
-            require('postcss-flexbugs-fixes'),
-            autoprefixer({
-              browsers: [
-                '>1%',
-                'last 4 versions',
-                'Firefox ESR',
-                'not ie < 9',
-              ],
-              flexbox: 'no-2009',
-            }),
-          ],
-        },
       },
       {
         loader: require.resolve('sass-loader'),
