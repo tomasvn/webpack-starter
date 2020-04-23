@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = {
-  mode: 'developement',
+  mode: 'development',
   devtool: 'source-map',
   entry: path.resolve(__dirname, 'src'),
   module: {
