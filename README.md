@@ -21,3 +21,12 @@ npm install
   - [x] Dev - `webpack.config.js`
   - [x] Prod - `webpackProd.config.js`
 - [ ] Complete rewrite
+
+### v0.1.0
+
+#### WIP
+
+- [] Divide webpack into multiple config files
+  - [] Use one just for static projects
+  - [] Use one just for web app projects
+- [] Set up React, TS

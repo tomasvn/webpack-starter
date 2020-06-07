@@ -4,8 +4,10 @@
   "description": "Webpack Starter",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dashboard -- webpack-dev-server --mode development --config webpack.config.js",
-    "build": "webpack --mode production --config webpackProd.config.js",
+    "dev:static": "webpack-dashboard -- webpack-dev-server --mode development --config webpack.config.js",
+    "dev:react": "webpack-dashboard -- webpack-dev-server --mode development --config webpack.react.config.js",
+    "build:static": "webpack --mode production --config webpackProd.config.js",
+    "build:react": "webpack --mode production --config webpackProdReact.config.js",
     "commit": "git-cz --disable-emoji"
   },
   "repository": {
@@ -18,6 +20,16 @@
     "url": "https://github.com/tomasvn/webpack-starter/issues"
   },
   "homepage": "https://github.com/tomasvn/webpack-starter#readme",
+  "dependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/webpack": "^4.41.17",
+    "fork-ts-checker-webpack-plugin": "^4.1.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
