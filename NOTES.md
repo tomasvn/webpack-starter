@@ -13,7 +13,8 @@
   - `@babel/plugin-transform-react-inline-elements` -  evaluates `React.createElement` during compilation and inlines the result [Read More](https://bit.ly/398WP1T)
   - `@babel/plugin-transform-react-constant-elements` - extracts static React elements as constants [Read More](https://bit.ly/354dfW8)
 
-## Webpack TS + React Support
+## Webpack + TS + React Support
 - [TS Loader](https://github.com/TypeStrong/ts-loader)
 - [TS Webpack Plugin](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin)
 - [TS + React + Webpack](https://www.smashingmagazine.com/2020/05/typescript-modern-react-projects-webpack-babel/)
+- [TS  + React + Webpack Project example](https://github.com/krasimir/beginning)
