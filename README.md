@@ -7,6 +7,16 @@ Webpack starter kit
 npm install
 ```
 
+## Info
+
+- all static files are stored in `src` folder
+- webpack for static project will read from `src` folder
+- output folder for static project is `dist`
+
+- web app files are stored in `app` folder
+- webpack for web app folder will read from `app` folder
+- output folder for web app is `public`
+
 ## WIP: New NPM Scripts
 
 ### Run static project
