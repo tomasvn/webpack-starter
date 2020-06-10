@@ -14,8 +14,13 @@ module.exports = {
         loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
-          transpileOnly: true
+          transpileOnly: true,
+          "sourceMap": true
         }
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
       }
     ]
   },
@@ -26,8 +31,8 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new DashboardPlugin(),
     new HtmlWebpackPlugin({
-      inject: true,
-      template: './app/index.html'
+      template: './app/index.html',
+      filename: './app/index.html'
     })
   ]
 }
