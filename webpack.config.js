@@ -1,9 +1,10 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const autoprefixer = require('autoprefixer');
+const DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = {
-  mode: 'developement',
+  mode: 'development',
+  devtool: 'source-map',
   entry: path.resolve(__dirname, 'src'),
   module: {
     rules: [
@@ -24,24 +25,6 @@ module.exports = {
         }
       },
       {
-        loader: require.resolve('postcss-loader'),
-        options: {
-          ident: 'postcss',
-          plugins: () => [
-            require('postcss-flexbugs-fixes'),
-            autoprefixer({
-              browsers: [
-                '>1%',
-                'last 4 versions',
-                'Firefox ESR',
-                'not ie < 9',
-              ],
-              flexbox: 'no-2009',
-            }),
-          ],
-        },
-      },
-      {
         loader: require.resolve('sass-loader'),
         options: {
           strictMath: true
@@ -50,13 +33,14 @@ module.exports = {
     ]
   },
   plugins: [
+    new DashboardPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       template: './src/index.html'
     })
   ],
   output: {
-    filename: '[hash].bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, './dist')
   }
 }
